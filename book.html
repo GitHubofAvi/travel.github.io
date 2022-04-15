@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>book</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <script src="https://kit.fontawesome.com/039b77e7bb.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="home.html" class="logo">Delhi Tourism.</a>
+
+   <nav class="navbar">
+      <a href="home.html">home</a>
+      <a href="package.html">package</a>
+      <a href="book.html">book</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+
+<div class="heading" style="background:url(images/header-bg-1.png) no-repeat">
+   <h1>book now</h1>
+</div>
+
+<!-- booking section starts  -->
+
+<section class="booking">
+
+   <h1 class="heading-title">book your trip!</h1>
+
+   <form class="book-form" id="form" onsubmit="return myFun()">
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>name :</span>
+            <input type="text" class="name" id="name" autocomplete="off" placeholder="enter your name"><small id="one"></small>
+         </div>
+         <div class="inputBox">
+            <span>email :</span>
+            <input type="email" class="email" id="email" name="email" autocomplete="off" placeholder="enter your email"><small id="two"></small>
+         </div>
+         <div class="inputBox">
+            <span>phone :</span>
+            <input type="number" class="number" id="phone" autocomplete="off" placeholder="enter your number"><small id="three"></small>
+         </div>
+         <div class="inputBox">
+            <span>address :</span>
+            <input type="text" class="address" address="address" autocomplete="off" placeholder="enter your address"><small id="four"></small>
+         </div>
+         <div class="inputBox">
+            <span>where to :</span>
+            <input type="text" class="where" id="whereTo" autocomplete="off" placeholder="place you want to visit"><small id="five"></small>
+         </div>
+         <div class="inputBox">
+            <span>how many :</span>
+            <input type="number" class="how_many" id="how_many" autocomplete="off" placeholder="number of guests"><small id="six"></small>            
+         </div>
+         <div class="inputBox">
+            <span>arrivals :</span>
+            <input type="date" class="arrivals" autocomplete="off">
+         </div>
+         <div class="inputBox">
+            <span>leaving :</span>
+            <input type="date" class="leaving" autocomplete="off">
+         </div>
+      </div><br>
+      <input type="submit" value="submit" class="btn-success btn-lg"  id="submit">
+   </form>
+
+</section>
+
+<!-- booking section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="package.html"> <i class="fas fa-angle-right"></i> package</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> book</a>
+      </div>
+
+      <div class="box">
+         <h3>extra links</h3>
+         <a href="questions.html"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="aboutUs.html"> <i class="fas fa-angle-right"></i> about us</a>
+
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="tel:8860692459"> <i class="fas fa-phone"></i> 8860692459 </a>
+         <a href="tel:9810742162"> <i class="fas fa-phone"></i> 9810742162 </a>
+         <a href="mailto:aviprajapati360@gmail.com"> <i class="fas fa-envelope"></i> Send Mail</a>
+         <a href="#"> <i class="fas fa-map"></i> Faridabad, Haryana, india - 121001 </a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="https://www.facebook.com/profile.php?id=100054503425113"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="https://www.instagram.com/avi___prajapati/"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="https://www.linkedin.com/in/avinash-prajapati-187653233/"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>Avinash's Web </span> | All rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script>
+
+   function myFun(){
+
+   //name validataion//
+      
+      var a = document.getElementById('name').value;
+      var a1 = document.getElementById('name').value;
+      if(a == ""){
+         document.getElementById('one').innerHTML="<font color ='red' size ='5px'>*Name cannot be blank</font>";
+         return false;
+      }
+   
+      if((a.length<=2) || (a.length>20)){
+         document.getElementById('one').innerHTML="<font color ='red' size ='5px'>*length of name must be between 2 and 20</font>";
+      }
+      if(!isNaN(a)){
+         document.getElementById('one').innerHTML="<font color ='red' size ='5px'>*Only aphabets are allowed</font>";
+      }
+      else true;
+
+      var b = document.getElementById('email').value;
+      if(b == ""){
+            document.getElementById('two').innerHTML="<font color ='red' size ='5px'>*Email cannot be blank</font>";
+            return false;
+         }
+      if(b.indexOf('@')<=0){
+            document.getElementById('two').innerHTML="<font color ='red' size ='5px'>*Invalid @ position</font>";
+            return false;
+         }
+         else true;
+
+      var c = document.getElementById('phone').value;
+      if(c==""){
+            document.getElementById('three').innerHTML="<font color ='red' size ='5px'>*phone cannot be blank</font>";
+            return false;
+         }
+      if(!isNaN(phone)){
+         document.getElementById('three').innerHTML="<font color ='red' size ='5px'>*phone must be in Numeric format</font>";
+         return false;
+      }
+      if(c.length!=10){
+         document.getElementById('three').innerHTML="<font color ='red' size ='5px'>*only 10 digit phone no. is allowed</font>";
+         return false;
+      }
+      else true;
+
+      var d = document.getElementById('how_many').value;
+      if(d==""){
+            document.getElementById('six').innerHTML="<font color ='red' size ='5px'>*No. of guest cannot be blank</font>";
+            return false;
+         }
+      if(isNaN(d)){
+         document.getElementById('six').innerHTML="<font color ='red' size ='5px'>*only no. are allowed</font>";
+            return false;
+      }
+      if(d.length>2){
+         document.getElementById('six').innerHTML="<font color ='red' size ='5px'>*people between 1 to 20 are allowed</font>";
+         return false;
+      }
+      else true;
+
+      var e = document.getElementById('whereTo').value;
+      if(e==""){
+            document.getElementById('five').innerHTML="<font color ='red' size ='5px'>*This field cannot be blank</font>";
+            return false;
+         }
+
+
+      }
+
+
+
+   
+//    const form =document.getElementById('form');
+//    const name =document.getElementById('name');
+//    const email=document.getElementById('email');
+//    const phone =document.getElementById('phone');
+//    const address =document.getElementById('address');
+//    const whereTo =document.getElementById('whereTo');
+//    const how_many= document.getElementById('how_many');
+
+// //add event//
+// form.addEventListener('submit',(event) => {
+//    event.preventDefault();
+//    validate();
+// })
+ 
+// //more email Validate//
+// const isEmail = (emailVal) =>{
+//    var atSymbol = emailVal.indexOf("@");
+//    if(atSymbol < 1) return false;
+//    var dot = emailVal.lastIndexOf('.');
+//    if(dot <= atSymbol + 3) return false;
+//    if(dot === emailVal.length - 1) return false;
+//    return true;
+// }
+
+// //define validate function
+// const validate = ()=>{
+
+//    const nameVal = name.value.trim();
+//    const emailVal = email.value.trim();
+//    const phoneVal = phone.value.trim();
+//    const addressVal = address.value.trim();
+//    const whereToVal = whereTo.value.trim();
+//    const how_manyVal = how_many.value.trim();
+   
+//    //validate name//
+//    if(nameVal === ""){
+//       setErrorMsg(name, 'name cannot be blank');
+//    }else if(nameVal.length <= 2){
+//       setErrorMsg(name, 'length of name should be min. 3 charaters');
+//    }else{
+//       setSuccessMsg(name);
+//    }
+
+//    //validate email//
+//    if(emailVal === ""){
+//       setErrorMsg(email, 'email cannot be blank');
+//    }else if (!isEmail(emailVal)){
+//       setErrorMsg(emailVal, 'Not a valid Email');
+//    }else{
+//       setSuccessMsg(email);
+//    }
+
+
+// //validate phone//
+// if(phoneVal === ""){
+//       setErrorMsg(phone, 'phone cannot be blank');
+//    }else if (phoneVal.length <= 10){
+//       setErrorMsg(phone, 'Not a valid phone');
+//    }else{
+//       setSuccessMsg(phone);
+//    }
+// }
+
+// function setErrorMsg(input, errormsgs){
+//    const input_Box = input.parentElement;
+//    const small = input_Box.querySelector('small');
+//    input_Box.className = "inputBox error";
+//    small.innerText = errormsgs;
+// }
+// function setSuccessMsg(input){
+//    const input_Box = input.parentElement;
+//    input_Box.className = "inputBox success";
+// } 
+
+</script>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+</body>
+
+
+</html>

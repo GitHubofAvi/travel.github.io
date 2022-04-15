@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <script src="https://kit.fontawesome.com/039b77e7bb.js" crossorigin="anonymous"></script> 
+   <link rel="stylesheet" href="css/all.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="header">
+
+        <a href="home.html" class="logo">Delhi Tourism.</a>
+     
+        <nav class="navbar">
+           <a href="home.html">home</a>
+           <a href="package.html">package</a>
+           <a href="book.html">book</a>
+        </nav>
+     
+        <div id="menu-btn" class="fa fa-bars"></div>
+     
+     </section>
+
+    <main>
+      <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <h1 class="faq-page">What is Delhi Tourism?</h1>
+                <div class="faq-body">
+                    <h4>Delhi, for all the right reasons, is the national capital of incredible India. Synonymous with diversity, Delhi has always been the epicentre of all activities in India which is reflected in its tourism. Right from the time of Pandavas, it has served as a major strategic and cultural hub of the country and rightly so, today it’s an exhibition of the history of India. Travelling in Delhi isn’t just limited to history but it’s a step to take past and present hand in hand.
+                    </h4>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+            <div class="faq-two">
+                <h1 class="faq-page">How to Book Ticket?</h1>
+                <div class="faq-body">
+                    <h4>
+                        <ul>
+                            <li>Go to Packages (located at navbar).</li>
+                            <li>Choose the places you want to travel.</li>
+                            <li>Click on Book Now button.</li>
+                            <li>Fill the Booking form as per your Details.</li>
+                            <li>After that Click Submit.</li>
+                        </ul>
+                    </h4>
+                </div>
+            </div>
+            <hr class="hr-line">
+            
+            <div class="faq-three">
+                <h1 class="faq-page">What is the entry or closing timing of tourist Places. and what is the best time to visit?</h1>
+                <div class="faq-body"><a href="timing.html">
+                    <p>Click here to get information about this.
+                    </p>
+                </a>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <section class="footer">
+
+        <div class="box-container">
+     
+           <div class="box">
+              <h3>quick links</h3>
+              <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+              <a href="package.html"> <i class="fas fa-angle-right"></i> package</a>
+              <a href="book.html"> <i class="fas fa-angle-right"></i> book</a>
+           </div>
+     
+           <div class="box">
+              <h3>extra links</h3>
+              <a href="questions.html"> <i class="fas fa-angle-right"></i> ask questions</a>
+              <a href="aboutUs.html"> <i class="fas fa-angle-right"></i> about us</a>
+           </div>
+     
+           <div class="box">
+              <h3>contact info</h3>
+              <a href="tel:8860692459"> <i class="fas fa-phone"></i> 8860692459 </a>
+              <a href="tel:9810742162"> <i class="fas fa-phone"></i> 9810742162 </a>
+              <a href="mailto:aviprajapati360@gmail.com"> <i class="fas fa-envelope"></i> Send Mail</a>
+              <a href="#"> <i class="fas fa-map"></i> Faridabad, Haryana, india - 121001 </a>
+           </div>
+     
+           <div class="box">
+              <h3>follow us</h3>
+              <a href="https://www.facebook.com/profile.php?id=100054503425113"> <i class="fab fa-facebook-f"></i> facebook </a>
+              <a href="https://www.instagram.com/avi___prajapati/"> <i class="fab fa-instagram"></i> instagram </a>
+              <a href="https://www.linkedin.com/in/avinash-prajapati-187653233/"> <i class="fab fa-linkedin"></i> linkedin </a>
+           </div>
+     
+        </div>
+     
+        <div class="credit"> created by <span>Avinash's Web </span> | All rights reserved! </div>
+     
+     </section>
+     
+    <script>
+    
+var faq = document.getElementsByClassName("faq-page");
+var i;
+
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+    </script>
+</body>
+
+
+</html>
+</body>
+</html>
